@@ -1,7 +1,7 @@
 const bigger = document.getElementById("biggerbutton");
 
-bigger.onclick(() => {
+function greet() {
     alert("Hello, world!");
-});
+}
 
 
