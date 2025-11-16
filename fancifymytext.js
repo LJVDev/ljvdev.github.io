@@ -1,8 +1,8 @@
 const bigger = document.getElementById("biggerbutton");
 
 function greet() {
-    document.getElementById("biggerbutton").style.width = parseInt(window.getComputedStyle(document.getElementById("text")).width) + 10 + 'px';
-    document.getElementById("biggerbutton").style.height = parseInt(window.getComputedStyle(document.getElementById("text")).width) + 10 + 'px';
+    document.getElementById("text").style.width = parseInt(window.getComputedStyle(document.getElementById("text")).width) + 10 + 'px';
+    document.getElementById("text").style.height = parseInt(window.getComputedStyle(document.getElementById("text")).width) + 10 + 'px';
 }
 
 
