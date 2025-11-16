@@ -1,7 +1,8 @@
 const bigger = document.getElementById("biggerbutton");
 
 function greet() {
-    alert("Hello, world!");
+    document.getElementById("biggerbutton").style.width++;
+    document.getElementById("biggerbutton").style.height++;
 }
 
 
