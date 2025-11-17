@@ -38,3 +38,7 @@ function buttonChange(e) {
         fancyLabel.style.textDecoration = "underline";
     }
 }
+
+function mooify() {
+    document.getElementById("text").value = (document.getElementById("text").value).toUpperCase().replaceAll('.', '-Moo.')
+}
