@@ -19,18 +19,16 @@ function buttonChange(e) {
     // T F      ==   F T
     // F T      ==   T F
 
-    switch (e) {
-        case boringButton:
-            fancyButton.checked = false;
-            textLabel.style.all = "none";
-            boringLabel.style.all = "none";
-            fancyLabel.style.all = "none";
-            break;
-        case fancyButton:
-            boringButton.checked = false;
-            textLabel.style.fontSize = 24 + "pt";
-            boringLabel.style.fontSize = 24 + "pt";
-            fancyLabel.style.fontSize = 24 + "pt";
-            break;
+    if (e === boringButton){
+        fancyButton.checked = false;
+        textLabel.style.all = "none";
+        boringLabel.style.all = "none";
+        fancyLabel.style.all = "none";
+    }
+    else if (e === fancyButton){
+        boringButton.checked = false;
+        textLabel.style.fontSize = 24 + "pt";
+        boringLabel.style.fontSize = 24 + "pt";
+        fancyLabel.style.fontSize = 24 + "pt";
     }
 }
