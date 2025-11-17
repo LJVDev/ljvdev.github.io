@@ -14,17 +14,6 @@ function buttonChange(e) {
     const fancyLabel = document.getElementById("fancylabel");
     const boringLabel = document.getElementById("boringlabel");
 
-    const fancify = () => {
-        textLabel.style.fontSize = 24 + "pt";
-        boringLabel.style.fontSize = 24 + "pt";
-        fancyLabel.style.fontSize = 24 + "pt";
-    }
-
-    const dullify = () => {
-        textLabel.style.all = "none";
-        boringLabel.style.all = "none";
-        fancyLabel.style.all = "none";
-    }
     // T T      ==   T F
     // F F      ==   T F
     // T F      ==   F T
@@ -33,11 +22,15 @@ function buttonChange(e) {
     switch (e) {
         case boringButton:
             fancyButton.checked = false;
-            dullify();
+            textLabel.style.all = "none";
+            boringLabel.style.all = "none";
+            fancyLabel.style.all = "none";
             break;
         case fancyButton:
             boringButton.checked = false;
-            fancify();
+            textLabel.style.fontSize = 24 + "pt";
+            boringLabel.style.fontSize = 24 + "pt";
+            fancyLabel.style.fontSize = 24 + "pt";
             break;
     }
 }
