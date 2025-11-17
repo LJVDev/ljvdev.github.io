@@ -33,9 +33,11 @@ function buttonChange(e) {
     switch (e) {
         case boringButton:
             fancyButton.checked = false;
-            fancify()
+            dullify();
+            break;
         case fancyButton:
             boringButton.checked = false;
-            dullify()
+            fancify();
+            break;
     }
 }
