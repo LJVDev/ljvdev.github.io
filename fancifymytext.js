@@ -33,5 +33,7 @@ function buttonChange(e) {
         textLabel.style.fontWeight = "bold";
         boringLabel.style.fontWeight = "bold";
         fancyLabel.style.fontWeight = "bold";
+        fancyLabel.style.color = "blue";
+        fancyLabel.style.textDecoration = "underline";
     }
 }
