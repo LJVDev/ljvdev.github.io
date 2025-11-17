@@ -21,9 +21,9 @@ function buttonChange(e) {
     }
 
     const dullify = () => {
-        textLabel.style.all = "revert";
-        boringLabel.style.all = "revert";
-        fancyLabel.style.all = "revert";
+        textLabel.style.all = "none";
+        boringLabel.style.all = "none";
+        fancyLabel.style.all = "none";
     }
     // T T      ==   T F
     // F F      ==   T F
