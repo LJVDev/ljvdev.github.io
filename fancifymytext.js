@@ -30,5 +30,8 @@ function buttonChange(e) {
         textLabel.style.fontSize = 24 + "pt";
         boringLabel.style.fontSize = 24 + "pt";
         fancyLabel.style.fontSize = 24 + "pt";
+        textLabel.style.fontWeight = "bold";
+        boringLabel.style.fontWeight = "bold";
+        fancyLabel.style.fontWeight = "bold";
     }
 }
