@@ -8,20 +8,20 @@
 	</head>
 
 	<body>
-		<h1>Fancify my Text</h1>
+		<h1 id="">Fancify my Text</h1>
 		
 
 		<!-- Your UI controls go here -->
 		<fieldset>
-			<label for="text">Text</label>
+			<label for="text" id="textlabel">Text</label>
 			<textarea rows="3" cols="30" id="text"></textarea>
 		</fieldset>
 		<fieldset>
 			<div>
 				<button id="biggerbutton" onclick="greet()">Bigger</button>&nbsp;
-				<label for="radio1">FancyShmancy</label>
+				<label for="radio1" id="fancylabel">FancyShmancy</label>
 				<input type="radio" id="radio1" onchange="buttonChange(this)"></input>&nbsp;
-				<label for="radio2">BoringBetty</label>
+				<label for="radio2" id="boringlabel">BoringBetty</label>
 				<input type="radio" id="radio2" onchange="buttonChange(this)"></label>
 			</div>
 		</fieldset>
