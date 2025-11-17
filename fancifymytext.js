@@ -1,10 +1,3 @@
-const boringButton = document.getElementById("radio1");
-const fancyButton = document.getElementById("radio2");
-
-const textLabel = document.getElementById("textlabel");
-const fancyLabel = document.getElementById("fancylabel");
-const boringLabel = document.getElementById("boringlabel");
-
 //textlabel
 //fancylabel
 //boringlabel
@@ -15,6 +8,12 @@ function greet() {
 }
 
 function buttonChange(e) {
+    const boringButton = document.getElementById("radio1");
+    const fancyButton = document.getElementById("radio2");
+    const textLabel = document.getElementById("textlabel");
+    const fancyLabel = document.getElementById("fancylabel");
+    const boringLabel = document.getElementById("boringlabel");
+    
     const fancify = () => {
         textLabel.style.fontSize = 24 + "pt";
         boringLabel.style.fontSize = 24 + "pt";
