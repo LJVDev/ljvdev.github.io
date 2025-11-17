@@ -13,7 +13,7 @@ function buttonChange(e) {
     const textLabel = document.getElementById("textlabel");
     const fancyLabel = document.getElementById("fancylabel");
     const boringLabel = document.getElementById("boringlabel");
-    
+
     const fancify = () => {
         textLabel.style.fontSize = 24 + "pt";
         boringLabel.style.fontSize = 24 + "pt";
@@ -29,13 +29,6 @@ function buttonChange(e) {
     // F F      ==   T F
     // T F      ==   F T
     // F T      ==   T F
-
-
-    if ((boringButton.checked && fancyButton.checked) || (!boringButton.checked && !fancyButton.checked)) {
-        boringButton.checked = false;
-        fancyButton.checked = false;
-        e.checked = true;
-    }
 
     switch (e) {
         case boringButton:
