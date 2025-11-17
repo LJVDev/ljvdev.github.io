@@ -8,8 +8,8 @@ function greet() {
 }
 
 function buttonChange(e) {
-    const boringButton = document.getElementById("radio1");
-    const fancyButton = document.getElementById("radio2");
+    const boringButton = document.getElementById("radio2");
+    const fancyButton = document.getElementById("radio1");
     const textLabel = document.getElementById("textlabel");
     const fancyLabel = document.getElementById("fancylabel");
     const boringLabel = document.getElementById("boringlabel");
