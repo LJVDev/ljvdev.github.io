@@ -4,7 +4,7 @@
 
 function greet() {
     document.getElementById("text").style.width = parseInt(window.getComputedStyle(document.getElementById("text")).width) + 10 + 'px';
-    document.getElementById("text").style.height = parseInt(window.getComputedStyle(document.getElementById("text")).width) + 10 + 'px';
+    document.getElementById("text").style.height = parseInt(window.getComputedStyle(document.getElementById("text")).height) + 10 + 'px';
 }
 
 function buttonChange(e) {
@@ -21,9 +21,9 @@ function buttonChange(e) {
 
     if (e === boringButton){
         fancyButton.checked = false;
-        textLabel.style.all = "none";
-        boringLabel.style.all = "none";
-        fancyLabel.style.all = "none";
+        textLabel.removeAttribute("style");
+        boringLabel.removeAttribute("style");
+        fancyLabel.removeAttribute("style");
     }
     else if (e === fancyButton){
         boringButton.checked = false;
