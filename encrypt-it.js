@@ -9,8 +9,10 @@
    * for the "load" event on the window, signalling the HTML DOM has been constructed
    * on the page. When this event occurs, the attached function (init) will be called.
    */
+  const encryptButton = document.getElementById("encrypt-it");
+
   window.addEventListener("load", init);
-  document.getElementById("encrypt-it").addEventListener("click", handleClick);
+  encryptButton.addEventListener("click", handleClick);
 
   /**
    * TODO: Write a function comment using JSDoc.
