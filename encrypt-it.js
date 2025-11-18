@@ -11,7 +11,7 @@
    */
   const encryptButton = document.getElementById("encrypt-it");
   const resetButton = document.getElementById("reset");
-  const toEncrypt = document.getElementById("text-input");
+  const toEncrypt = document.getElementById("input-text");
   const result = document.getAnimations("result");
 
   window.addEventListener("load", init);
