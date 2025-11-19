@@ -28,12 +28,12 @@
 
   }
 
-  function handleEncrypt(event) {
+  function handleEncrypt() {
     const encryptedString = shiftCipher(toEncrypt.value);
     toEncrypt.value = encryptedString;
   }
 
-  function handleReset(event) {
+  function handleReset() {
     result.value = "";
   }
 
