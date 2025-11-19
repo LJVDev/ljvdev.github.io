@@ -30,7 +30,7 @@
 
   function handleEncrypt() {
     const encryptedString = shiftCipher(toEncrypt.value);
-    toEncrypt.value = encryptedString;
+    result.value = encryptedString;
   }
 
   function handleReset() {
