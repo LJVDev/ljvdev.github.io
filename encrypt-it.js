@@ -9,10 +9,10 @@
    * for the "load" event on the window, signalling the HTML DOM has been constructed
    * on the page. When this event occurs, the attached function (init) will be called.
    */
-  const encryptButton = document.getElementById("encrypt-it");
-  const resetButton = document.getElementById("reset");
-  const toEncrypt = document.getElementById("input-text");
-  const result = document.getElementById("result");
+  var encryptButton;
+  var resetButton;
+  var toEncrypt;
+  var result;
 
   window.addEventListener("load", init);
   
@@ -23,6 +23,10 @@
     // Note: In this function, we usually want to set up our event handlers
     // for UI elements on the page.
     console.log("Window loaded!");
+    encryptButton = document.getElementById("encrypt-it");
+    resetButton = document.getElementById("reset");
+    toEncrypt = document.getElementById("input-text");
+    result = document.getElementById("result");
     encryptButton.addEventListener("click", handleEncrypt);
     resetButton.addEventListener("click", handleReset);
   }
