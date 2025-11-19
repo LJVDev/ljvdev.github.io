@@ -14,6 +14,8 @@
   const toEncrypt = document.getElementById("input-text");
   const result = document.getElementById("result");
 
+  window.addEventListener("load", init);
+  
   /**
    * TODO: Write a function comment using JSDoc.
    */
@@ -21,7 +23,6 @@
     // Note: In this function, we usually want to set up our event handlers
     // for UI elements on the page.
     console.log("Window loaded!");
-    window.addEventListener("load", init);
     encryptButton.addEventListener("click", handleEncrypt);
     resetButton.addEventListener("click", handleReset);
   }
@@ -33,6 +34,7 @@
 
   function handleReset() {
     result.value = "";
+    toEncrypt.value = "";
   }
 
   /**
