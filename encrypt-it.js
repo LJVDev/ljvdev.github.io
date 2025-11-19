@@ -33,11 +33,11 @@
 
   function handleEncrypt() {
     const encryptedString = shiftCipher(toEncrypt.value);
-    result.value = encryptedString;
+    result.textContent = encryptedString;
   }
 
   function handleReset() {
-    result.value = "";
+    result.textContent = "";
     toEncrypt.value = "";
   }
 
